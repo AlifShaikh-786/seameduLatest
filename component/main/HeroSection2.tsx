@@ -95,7 +95,7 @@ export default function HeroSection2() {
   };
 
   return (
-    <section className="relative w-full h-[94vh] sm:h-screen min-h-[500px] bg-black overflow-hidden font-sans">
+    <section className="relative w-full h-[94vh] sm:h-screen min-[2000px]:h-[110vh] min-h-[500px] min-[2000px]:min-h-[1200px] bg-black overflow-hidden font-sans">
       {/* BACKGROUND SLIDER */}
       <div className="absolute inset-0 z-0 bg-black">
         <AnimatePresence mode="sync">
@@ -132,7 +132,9 @@ export default function HeroSection2() {
       </div>
 
       {/* MAIN CONTENT */}
-      <div className="container mx-auto px-6 sm:px-10 md:px-16 lg:px-24 h-full relative z-30 flex flex-col items-start pt-36 sm:pt-40 sm:mt-14 lg:pt-24 lg:mt-6 pb-32">
+      <div className="container mx-auto px-6 sm:px-10 lg:px-24 
+h-full relative z-30 flex flex-col items-start 
+pt-28 sm:pt-20 lg:pt-24 min-[2000px]:pt-60 pb-32 min-[2000px]:pb-60">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeSlide}
@@ -140,30 +142,33 @@ export default function HeroSection2() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 20 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-4xl"
+            className="max-w-4xl ultra:max-w-7xl min-[2000px]:max-w-[2200px]"
           >
 
             {/* SCHOOL TAG */}
-            <p className="text-white uppercase tracking-[0.2em] font-semibold mb-10 sm:mb-10 flex items-center gap-2 text-[10px] sm:text-xs">
+<p className="text-white uppercase tracking-[0.2em] font-semibold mb-10 text-[10px] sm:text-xs xxl:text-2xl  ultra:text-5xl min-[2000px]:mt-40 sm:mt-8 md:mt-10">
+{/* <p className="text-white uppercase tracking-[0.2em] font-semibold mb-10 
+text-[10px] sm:text-xs "> */}
+ 
               {/* <span className="w-12 h-[1.5px] bg-blue-600/60 inline-block"></span> */}
               {slides[activeSlide].tag}
             </p>
 
             {/* HEADING */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-[1.2] sm:leading-[1.1] tracking-tight text-pretty">
+       <h1 className="text-3xl sm:text-4xl md:text-5xl xxl:text-[120px] ultra:text-[200px] min-[2000px]:text-[450px] font-semibold text-white leading-[1.1] tracking-tighter">
               {slides[activeSlide].heading}
             </h1>
 
             {/* SUBHEADING */}
-            <p className="mt-8 sm:mt-10 text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl font-medium">
+       <p className="mt-8 sm:mt-10 text-base sm:text-lg md:text-xl xxl:text-[84px] ultra:text-[160px] min-[2000px]:text-[320px] text-slate-300 leading-relaxed max-w-2xl ultra:max-w-5xl min-[2000px]:max-w-7xl font-medium">
               {slides[activeSlide].subheading}
             </p>
 
             {/* CTA BUTTONS */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-14 sm:mt-10">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-14 sm:mt-10 md:mb-16">
               <button
                 onClick={toggleInquiry}
-                className="group relative rounded-full bg-blue-600 overflow-hidden text-white transition-all duration-500 px-6 py-3 sm:px-8 sm:py-3 md:px-8 md:py-4 font-semibold text-sm sm:text-base tracking-widest uppercase shadow-[0_20px_40px_rgba(0,0,0,0.1)] hover:shadow-[0_25px_50px_rgba(37,99,235,0.3)] flex items-center justify-center gap-4"
+                className="group relative rounded-full bg-blue-600 overflow-hidden text-white transition-all duration-500 px-6 py-3 sm:px-8 sm:py-3 md:px-8 md:py-4 ultra:px-12 ultra:py-8 min-[2000px]:px-32 min-[2000px]:py-24 font-semibold  text-sm sm:text-base xxl:text-lg ultra:text-3xl min-[2000px]:text-9xl tracking-widest uppercase shadow-[0_20px_40px_rgba(0,0,0,0.1)] hover:shadow-[0_25px_50px_rgba(37,99,235,0.3)] flex items-center justify-center gap-4"
               >
                 <div className="absolute inset-0 bg-blue-600 transition-transform origin-left duration-500" />
                 <span className="relative z-10">Explore Programs</span>

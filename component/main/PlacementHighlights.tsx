@@ -112,7 +112,7 @@ export default function PlacementHighlights() {
 
   return (
     <section className="bg-white">
-      <div className="flex flex-col md:flex-row md:min-h-[480px] border-t border-b border-black/10">
+      <div className="flex flex-col md:flex-row md:min-h-[480px] border-t border-b border-black/10 mx-auto w-full huge:max-w-[1280px]">
         {/* Left panel */}
         <div className="bg-slate-900 flex flex-col justify-center">
           <div className="pl-6 pt-10 pb-6 md:w-72 md:flex-shrink-0 md:flex md:flex-col md:justify-center md:pl-12 md:py-16 md:gap-5 mr-10">
@@ -169,7 +169,7 @@ export default function PlacementHighlights() {
       </div>
 
       {/* Bottom bar */}
-      <div className="flex items-center justify-between px-6 py-4 md:px-10 border-b border-black/10">
+      <div className="flex items-center justify-between px-6 py-4 md:px-10 border-b border-black/10 mx-auto w-full huge:max-w-[1280px]">
         <div className="flex items-center gap-1.5 md:hidden">
           {placementData.map((_, idx) => (
             <span

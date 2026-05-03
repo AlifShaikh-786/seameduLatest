@@ -82,14 +82,14 @@ export default function PlacementHiring() {
       <div className="flex flex-col gap-3">
 
         {/* Row 1: Left Moving */}
-        <div className="relative flex overflow-hidden lg:mx-40 md:mx-20">
-          <div className="flex marquee-scroll-left w-max whitespace-nowrap items-center">
+  <div className="relative flex overflow-hidden mx-auto w-full huge:max-w-[1270px]">
+          <div className="flex marquee-scroll-left w-max whitespace-nowrap items-center  ">
             {[...row1Logos, ...row1Logos].map((logo, i) => (
               <img
                 key={i}
                 src={logo.src}
                 alt="Partner Logo"
-                className={`${logo.h || 'h-[40px] md:h-[50px]'} ${logo.w || 'w-auto'} mx-4 md:mx-10 object-contain flex-shrink-0 transition-all duration-300`}
+                className={`${logo.h || 'h-[40px] md:h-[50px]'} ${logo.w || 'w-auto'}  mx-4 md:mx-10 object-contain flex-shrink-0 transition-all duration-300`}
               />
             ))}
           </div>
@@ -99,7 +99,7 @@ export default function PlacementHiring() {
         </div>
 
         {/* Row 2: Right Moving */}
-        <div className="relative flex overflow-hidden lg:mx-40 md:mx-20 ">
+    <div className="relative flex overflow-hidden mx-auto w-full huge:max-w-[1270px]">
           <div className="flex marquee-scroll-right w-max whitespace-nowrap items-center ">
             {[...row2Logos, ...row2Logos].map((logo, i) => (
               <img

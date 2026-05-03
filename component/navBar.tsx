@@ -203,19 +203,19 @@ export function NavBar() {
           animation: fadeIn 0.3s ease-in-out;
         }
       `}</style>
-      <header className={`fixed top-0 left-1/2 z-[70] w-full max-w-[1400px] -translate-x-1/2 px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 flex items-center justify-between transition-all duration-300 ${menuOpen ? "bg-white shadow-none" : "bg-white md:bg-transparent shadow-md md:shadow-none"}`}>
+      <header className={`fixed top-0 left-1/2 z-[70] w-full max-w-[1400px] -translate-x-1/2 px-6 sm:px-8 nav:px-10 py-2.5 sm:py-3 flex items-center justify-between transition-all duration-300 ${menuOpen ? "bg-white shadow-none" : "bg-white nav:bg-transparent shadow-md nav:shadow-none"}`}>
 
         {/* Logo */}
         <Link href="/" className="logo" onClick={() => { setActiveMenu(null); setMenuOpen(false); }}>
           <img
             src="/images/logo.svg"
             alt="Seamedu Logo"
-            className={`h-10 sm:h-12 transition-all duration-500 ${!isScrolled ? "md:invert md:hue-rotate-180" : ""}`}
+            className={`h-10 sm:h-12 transition-all duration-500 ${!isScrolled ? "nav:invert nav:hue-rotate-180" : ""}`}
           />
         </Link>
 
         {/* Center Navigation Pill (Desktop only) */}
-        <nav className="hidden md:block rounded-full border border-[#8eabe480] bg-white/60 backdrop-blur-md px-[20px] lg:px-[30px] xl:px-[45px] py-3 lg:py-4 xl:py-5 shadow-[0_8px_32px_0_rgba(31,38,135,0.1)] relative">
+        <nav className="hidden nav:block rounded-full border border-[#8eabe480] bg-white/60 backdrop-blur-md px-[20px] lg:px-[30px] xl:px-[45px] py-3 lg:py-4 xl:py-5 shadow-[0_8px_32px_0_rgba(31,38,135,0.1)] relative">
           <ul className="flex items-center gap-[10px] lg:gap-[15px] xl:gap-[25px] list-none p-0 m-0">
             {navItems.map((item) => (
               <li
@@ -322,7 +322,7 @@ export function NavBar() {
         </nav>
 
         {/* CTA Button */}
-        <div className="cta-button hidden sm:block">
+        <div className="cta-button hidden nav:block">
           <a
             href="#"
             className="inline-block whitespace-nowrap rounded-full bg-blue-600 px-[20px] lg:px-[24px] xl:px-[30px] py-[8px] lg:py-[10px] xl:py-[12px] text-[13px] lg:text-[14px] xl:text-[15px] font-semibold text-white transition-colors hover:bg-blue-700"
@@ -334,7 +334,7 @@ export function NavBar() {
         {/* Hamburger Menu (Mobile Toggle) */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden sm:hidden relative z-[100] p-2 -mr-2 text-slate-900 group"
+          className="nav:hidden relative z-[100] p-2 -mr-2 text-slate-900 group"
           aria-label="Toggle Menu"
         >
           <div className="flex flex-col gap-1.5 w-7 items-end">
@@ -366,7 +366,7 @@ export function NavBar() {
                 exit={{ opacity: 0 }}
                 onClick={() => setMenuOpen(false)}
                 style={{ backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)" }}
-                className="fixed inset-0 bg-slate-900/60 transition-opacity md:hidden z-[9999]"
+                className="fixed inset-0 bg-slate-900/60 transition-opacity nav:hidden z-[9999]"
               />
 
               {/* Menu Content */}
@@ -375,7 +375,7 @@ export function NavBar() {
                 animate={{ x: 0 }}
                 exit={{ x: "100%" }}
                 transition={{ type: "spring", damping: 30, stiffness: 300, mass: 1 }}
-                className="fixed top-0 right-0 bottom-0 h-screen w-[85%] max-w-[400px] bg-white md:hidden z-[10000] flex flex-col shadow-[-25px_0_60px_-15px_rgba(0,0,0,0.3)] border-l border-slate-50"
+                className="fixed top-0 right-0 bottom-0 h-screen w-[85%] max-w-[400px] bg-white nav:hidden z-[10000] flex flex-col shadow-[-25px_0_60px_-15px_rgba(0,0,0,0.3)] border-l border-slate-50"
               >
                 {/* Header Logo In Side Bar */}
                 <div className="px-6 py-5 border-b border-slate-50 flex items-center justify-between sticky top-0 bg-white z-[100]">
