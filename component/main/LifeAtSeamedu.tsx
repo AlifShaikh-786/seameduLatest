@@ -82,9 +82,9 @@ const CampusLife = () => {
         
         {/* Header Section */}
         <div className="mb-12 flex flex-col items-center text-center">
-          <span className="text-blue-600 font-bold tracking-[0.3em] text-[10px] md:text-xs uppercase mb-2">
+          {/* <span className="text-blue-600 font-bold tracking-[0.3em] text-[10px] md:text-xs uppercase mb-2">
             Visual Journey
-          </span>
+          </span> */}
           <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-3">
             Life At <span className="text-blue-600">Seamedu</span>
           </h2>
