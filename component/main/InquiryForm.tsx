@@ -125,7 +125,7 @@ export default function InquiryForm() {
                 <div className="fixed right-0 top-1/2 -translate-y-1/2 z-[100] group">
                     <button
                         onClick={() => setIsOpen(true)}
-                        className="flex items-center justify-center bg-blue-600 text-white font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs py-3 px-3 rounded-r-2xl shadow-[-5px_0_30px_rgba(37,99,235,0.4)] transition-all duration-300 hover:bg-blue-700 hover:pl-5 border border-blue-500"
+                        className="flex items-center justify-center bg-blue-600 text-white font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs py-3 px-3 rounded-r-2xl shadow-[-5px_0_30px_rgba(37,99,235,0.4)] transition-all duration-300 hover:bg-blue-700 hover:pl-5 border border-blue-500 inquiry-btn-custom"
                         style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
                     >
                         Enquiry Now
@@ -245,6 +245,18 @@ export default function InquiryForm() {
                 .custom-scrollbar::-webkit-scrollbar { width: 3px; }
                 .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
                 .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+                @media (min-width: 1900px) {
+                    .inquiry-btn-custom {
+                        font-size: 20px !important;
+                        padding: 1.5rem !important;
+                        border-top-right-radius: 2rem !important;
+                        border-bottom-right-radius: 2rem !important;
+                    }
+                    .inquiry-btn-custom:hover {
+                        padding-left: 2.5rem !important;
+                    }
+                }
             `}</style>
         </>
     );

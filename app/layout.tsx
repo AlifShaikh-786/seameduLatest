@@ -6,6 +6,7 @@ import Footer from "@/component/Footer";
 import InquiryForm from "@/component/main/InquiryForm";
 import ChatWidget from "@/component/main/ChatWidget";
 import Footer1 from "@/component/Footer1";
+import NavNew from "@/component/main/NavNew";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -37,9 +38,10 @@ export default function RootLayout({
         className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
         {/* Navbar */}
-        <div className="top-0 left-1/2 z-[100] absolute -translate-x-1/2 w-full max-w-[1400px] px-10 py-5 fixed">
-          <NavBar />
-        </div>
+        {/* <div className="top-0 left-1/2 z-[100] absolute -translate-x-1/2 w-full max-w-[1400px] px-10 py-5 fixed"> */}
+          {/* <NavBar /> */}
+        <NavNew /> 
+        {/* </div> */}
 
         {/* Page Content */}
         <main className="flex-grow ">{children}</main>

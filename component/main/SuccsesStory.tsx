@@ -125,7 +125,7 @@ const SuccessStories = () => {
         {/* Title */}
         <div className="mb-12 flex flex-col items-center text-center">
           <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-3">
-            Our <span className="text-blue-600">Success Stories</span>
+            Events And <span className="text-blue-600">Updates</span>
           </h2>
           <p className="text-slate-500 max-w-2xl text-center mt-4 text-md md:text-lg">
             Meet the talented individuals who have shaped their careers with Seamedu.
