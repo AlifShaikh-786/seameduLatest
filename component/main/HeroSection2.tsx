@@ -94,10 +94,10 @@ export default function HeroSection2() {
     setActiveSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
   };
 
-  return (
+  return ( 
     <>
       <style>{`
-        @media (min-width: 2400px) {
+        @media (min-width: 2300px) {
           .hero-section-custom { height: 110vh !important; min-height: 1100px !important; }
           .hero-container-custom { padding-top: 4.5rem !important; padding-bottom: 15rem !important; max-width: 2200px !important; }
           .hero-tag-custom { font-size: 30px !important; margin-top: 6rem !important; }
@@ -180,7 +180,7 @@ text-[10px] sm:text-xs "> */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-14 sm:mt-10 md:mb-16">
               <button
                 onClick={toggleInquiry}
-                className="group relative rounded-full bg-blue-600 overflow-hidden text-white transition-all duration-500 px-6 py-3 sm:px-8 sm:py-3 md:px-8 md:py-4 ultra:px-12 ultra:py-8 font-semibold text-sm sm:text-base xxl:text-lg ultra:text-3xl tracking-widest uppercase shadow-[0_20px_40px_rgba(0,0,0,0.1)] hover:shadow-[0_25px_50px_rgba(37,99,235,0.3)] flex items-center justify-center gap-4 hero-btn-custom"
+                className="group relative rounded-full bg-blue-600 overflow-hidden text-white transition-all duration-500 px-6 py-3 sm:px-8 sm:py-3 md:px-8 md:py-4 ultra:px-12 ultra:py-8 font-semibold text-sm sm:text-base xxl:text-lg ultra:text-3xl tracking-widest uppercase shadow-[0_20px_40px_rgba(0,0,0,0.1)]  flex items-center justify-center gap-4 hero-btn-custom"
               >
                 <div className="absolute inset-0 bg-blue-600 transition-transform origin-left duration-500" />
                 <span className="relative z-10">Explore Programs</span>

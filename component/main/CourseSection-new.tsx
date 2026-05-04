@@ -69,7 +69,7 @@ export default function CourseSection() {
                                     }}
                                     transition={{ duration: 0.5, ease: [0.33, 1, 0.68, 1] }}
                                 >
-                                    <h3 className="text-xl sm:text-2xl font-semibold text-white mb-1 drop-shadow-[0_2px_15px_rgba(0,0,0,1)] leading-tight">
+                                    <h3 className="text-xl sm:text-xl font-semibold text-white mb-1 drop-shadow-[0_2px_15px_rgba(0,0,0,1)] leading-tight">
                                         {course.name}
                                     </h3>
 

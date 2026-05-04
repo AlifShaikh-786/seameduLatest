@@ -128,7 +128,7 @@ export default function InquiryForm() {
                         className="flex items-center justify-center bg-blue-600 text-white font-bold uppercase tracking-[0.2em] text-[10px] sm:text-xs py-3 px-3 rounded-r-2xl shadow-[-5px_0_30px_rgba(37,99,235,0.4)] transition-all duration-300 hover:bg-blue-700 hover:pl-5 border border-blue-500 inquiry-btn-custom"
                         style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
                     >
-                        Enquiry Now
+                        Enquire Now
                     </button>
                 </div>
             )}

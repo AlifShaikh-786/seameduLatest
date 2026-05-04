@@ -38,7 +38,7 @@ export default function CampusesSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16 md:mb-20">
-          <h2 className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.3em] text-blue-600 mb-2">Where We Teach</h2>
+          {/* <h2 className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.3em] text-blue-600 mb-2">Where We Teach</h2> */}
           <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-3">
             Our <span className="text-blue-600">Campuses</span>
           </h2>
@@ -48,7 +48,7 @@ export default function CampusesSection() {
         </div>
 
         {/* Campus Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8  md:px-20 md:mr-8 md:ml-8">
           {campusData.map((campus, index) => (
             <motion.div
               key={index}
@@ -56,11 +56,11 @@ export default function CampusesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className={`group bg-white rounded-2xl overflow-hidden border border-slate-100/80 shadow-sm flex flex-col ${index === campusData.length - 1 ? "md:col-start-2" : ""
+              className={`group bg-white rounded-2xl overflow-hidden border  border-slate-100/80 shadow-sm flex flex-col ${index === campusData.length - 1 ? "md:col-start-2" : ""
                 }`}
             >
               {/* Campus Image - Priority Layout */}
-              <div className="relative h-64 w-full overflow-hidden bg-slate-200">
+              <div className="relative h-52 w-full overflow-hidden bg-slate-200">
                 <Image
                   src={campus.image}
                   alt={campus.university}
@@ -73,10 +73,10 @@ export default function CampusesSection() {
 
               {/* Compact Content Section */}
               <div className="p-5 flex-1 flex flex-col">
-                <h4 className="text-lg font-black text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                <h4 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
                   {campus.university}
                 </h4>
-                <div className="flex items-center gap-1.5 text-slate-500 text-[10px] font-bold uppercase tracking-wider mb-4">
+                <div className="flex items-center gap-1.5 text-slate-500 text-[10px] font-semibold uppercase tracking-wider mb-4">
                   <FaMapMarkerAlt size={10} className="text-blue-600" />
                   <span>{campus.location}</span>
                 </div>
@@ -86,7 +86,7 @@ export default function CampusesSection() {
                 </p>
 
                 <div className="mt-auto">
-                  <button className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-blue-700 transition-all active:scale-95 cursor-pointer shadow-md shadow-blue-200/50">
+                  <button className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white rounded-lg text-[10px] font-semibold uppercase tracking-widest hover:bg-blue-700 transition-all active:scale-95 cursor-pointer shadow-md shadow-blue-200/50">
                     Explore <FaArrowRight size={10} />
                   </button>
                 </div>

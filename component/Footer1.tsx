@@ -103,7 +103,7 @@ export default function Footer() {
 
                     {/* Information column */}
                     <div className="col-span-1">
-                        <h4 className="text-black font-black mt-2 md:mt-5 text-sm uppercase mb-4 md:mb-7 tracking-wider flex items-center gap-3 group">
+                        <h4 className="text-black font-bold mt-2 md:mt-5 text-sm uppercase mb-4 md:mb-7 tracking-wider flex items-center gap-3 group">
                             Information
                         </h4>
                         <ul className="space-y-3.5">
@@ -126,7 +126,7 @@ export default function Footer() {
 
                     {/* Schools column */}
                     <div className="col-span-1">
-                        <h4 className="text-black font-black text-sm uppercase mb-3 md:mb-7 mt-2 md:mt-5 tracking-wider flex items-center gap-3 group">
+                        <h4 className="text-black font-bold text-sm uppercase mb-3 md:mb-7 mt-2 md:mt-5 tracking-wider flex items-center gap-3 group">
                             Schools
                         </h4>
                         <ul className="space-y-3.5">
@@ -150,7 +150,7 @@ export default function Footer() {
                     {/* Contact With Us Column */}
                     <div className="flex flex-col gap-6 col-span-2 md:col-span-1 items-center md:items-start text-center md:text-left">
                         <div className="w-full">
-                            <h4 className="text-black font-black text-sm uppercase mb-4 md:mb-7 mt-2 md:mt-5 tracking-wider flex items-center justify-center md:justify-start gap-3 group">
+                            <h4 className="text-black font-bold text-sm uppercase mb-4 md:mb-7 mt-2 md:mt-5 tracking-wider flex items-center justify-center md:justify-start gap-3 group">
                                 Contact With Us
                             </h4>
                             <div className="flex flex-col gap-2 md:gap-3">
@@ -161,8 +161,8 @@ export default function Footer() {
                                             className="w-full flex items-center justify-between text-left group hover:text-blue-600 transition-colors py-1"
                                         >
                                             <div className="flex flex-col">
-                                                <span className="text-[13px] font-black text-slate-800 group-hover:text-blue-600 uppercase transition-colors">{campus.name}</span>
-                                                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tight -mt-0.5">{campus.detail}</span>
+                                                <span className="text-[13px] font-bold text-slate-800 group-hover:text-blue-600 uppercase transition-colors">{campus.name}</span>
+                                                <span className="text-[10px] font-semibold text-slate-400 uppercase tracking-tight -mt-0.5">{campus.detail}</span>
                                             </div>
                                             <FaChevronDown className={`text-[10px] transition-transform duration-300 ${openCampus === idx ? 'rotate-180 text-blue-600' : 'text-slate-400'}`} />
                                         </button>

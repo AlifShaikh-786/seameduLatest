@@ -119,7 +119,7 @@ export default function PlacementHiring() {
 
       {/* CTA Button */}
       <div className="flex justify-center mt-10">
-        <button className="bg-blue-600 text-sm md:text-lg hover:bg-blue-700 text-white font-bold py-3 sm:py-3 px-8 sm:px-12 rounded-xl transition-all shadow-lg hover:shadow-blue-200 hover:-translate-y-0.5 active:translate-y-0">
+        <button className="bg-blue-600 text-sm md:text-lg hover:bg-blue-700 text-white font-semibold py-3 sm:py-3 px-8 sm:px-12 rounded-xl transition-all shadow-lg hover:shadow-blue-200 hover:-translate-y-0.5 active:translate-y-0">
           View All Placements
         </button>
       </div>
