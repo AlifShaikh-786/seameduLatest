@@ -42,7 +42,7 @@ export default function CampusesSection() {
           <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-3">
             Our <span className="text-blue-600">Campuses</span>
           </h2>
-          <p className="text-slate-500 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+          <p className="text-slate-500 max-w-2xl mx-auto text-md md:text-lg font-medium leading-relaxed">
             Join our world-class learning centers in collaboration with leading universities across India.
           </p>
         </div>
