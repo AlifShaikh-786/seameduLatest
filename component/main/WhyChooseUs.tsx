@@ -72,7 +72,7 @@ const WhyChoose = () => {
           <p className="text-slate-500 max-w-xl mx-auto font-medium text-md md:text-lg">
             Empowering students with industry-grade skills, world-class facilities, and a legacy of excellence in creative media.
           </p>
-        </div>
+        </div> 
 
         {/* 3x2 Grid */}
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-4 sm:gap-x-8 gap-y-10">

@@ -325,7 +325,7 @@ export function NavBar() {
         <div className="cta-button hidden nav:block">
           <a
             href="#"
-            className="inline-block whitespace-nowrap rounded-full bg-blue-600 px-[20px] lg:px-[24px] xl:px-[30px] py-[8px] lg:py-[10px] xl:py-[12px] text-[13px] lg:text-[14px] xl:text-[15px] font-semibold text-white transition-colors hover:bg-blue-700"
+            className="inline-block whitespace-nowrap rounded-full bg-blue-600 px-[20px] lg:px-[24px] xl:px-[30px] py-[8px] lg:py-[10px] xl:py-[12px] text-[13px] lg:text-[14px] xl:text-[15px] font-medium text-white transition-colors hover:bg-blue-700"
           >
             Apply Now
           </a>

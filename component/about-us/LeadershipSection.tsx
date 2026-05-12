@@ -1,17 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Nunito, Cabin } from "next/font/google";
-import { motion } from "framer-motion";
 
-const nunito = Nunito({
-    subsets: ["latin"],
-    weight: ["400", "500", "600", "700", "800", "900"],
-});
-const cabin = Cabin({
-    subsets: ["latin"],
-    weight: ["400", "500", "600", "700"],
-});
 
 export default function LeadershipSection() {
     return (
@@ -42,7 +32,7 @@ export default function LeadershipSection() {
                             ></motion.span>
                             <span className="text-[12px] font-black text-blue-600 uppercase tracking-[5px] drop-shadow-sm">Visionary Leadership</span>
                         </div>
-                        <h2 className={`${nunito.className} text-[32px] md:text-[45px] text-slate-900 font-black tracking-tighter leading-none`}>
+                        <h2 className="text-[32px] md:text-[45px] text-slate-900 font-black tracking-tighter leading-none">
                             MESSAGE FROM <span className="text-blue-600 relative inline-block group/title">
                                 THE CHAIRMAN
                                 <motion.span
@@ -81,22 +71,22 @@ export default function LeadershipSection() {
 
                             <div className="mt-8 text-left w-full max-w-[340px]">
                                 <motion.h4
-                                    className={`${nunito.className} font-black text-3xl text-slate-900 tracking-tight leading-none mb-2`}
+                                    className="font-black text-3xl text-slate-900 tracking-tight leading-none mb-2"
                                 >
                                     Dr. Sushant Patil
                                 </motion.h4>
-                                <p className={`${cabin.className} text-[15px] font-bold text-blue-600 uppercase tracking-[3px]`}>
+                                <p className="text-[15px] font-bold text-blue-600 uppercase tracking-[3px]">
                                     Chairman, Seamedu
                                 </p>
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-8 pt-6">
-                            <p className={`${cabin.className} text-[18px] text-slate-600 leading-relaxed text-justify font-medium`}>
+                            <p className="text-[18px] text-slate-600 leading-relaxed text-justify font-medium">
                                 At <strong className="text-slate-900 font-black">Seamedu School of Pro-Expressionism</strong>, we believe that education must evolve as rapidly as the industry it serves. Since 2008, our mission has been to bridge the gap between academic theory and practical, industry-standard skillsets.
                             </p>
 
-                            <p className={`${cabin.className} text-[18px] text-slate-600 leading-relaxed text-justify font-medium`}>
+                            <p className="text-[18px] text-slate-600 leading-relaxed text-justify font-medium">
                                 We are committed to nurturing the next generation of creative and technical leaders. By providing state-of-the-art facilities and mentorship, we ensure our students don't just graduate, but emerge as pioneers in their chosen fields.
                             </p>
 
@@ -107,7 +97,7 @@ export default function LeadershipSection() {
                                     transition={{ duration: 1 }}
                                     className="absolute left-0 top-0 w-2 bg-blue-600 rounded-full shadow-[0_0_15px_rgba(37,99,235,0.4)]"
                                 />
-                                <blockquote className={`${cabin.className} text-[19px] text-slate-800 leading-relaxed text-justify italic pl-10 pr-8 relative bg-blue-50/30 backdrop-blur-sm rounded-r-[32px] py-8 border border-blue-100/50`}>
+                                <blockquote className="text-[19px] text-slate-800 leading-relaxed text-justify italic pl-10 pr-8 relative bg-blue-50/30 backdrop-blur-sm rounded-r-[32px] py-8 border border-blue-100/50">
                                     <span className="absolute left-4 top-2 text-7xl text-blue-200/50 font-serif leading-none select-none">"</span>
                                     <em>
                                         Our vision is to empower young minds with the <strong className="text-blue-600 font-extrabold">right tools and mindset</strong> to navigate the complexities of the modern workforce, preparing them for <strong className="text-blue-600 font-extrabold">future-ready careers</strong>.
@@ -137,7 +127,7 @@ export default function LeadershipSection() {
                                 className="h-[2px] bg-blue-600 rounded-full"
                             ></motion.span>
                         </div>
-                        <h2 className={`${nunito.className} text-[32px] md:text-[45px] text-slate-900 font-black tracking-tighter leading-none md:text-right`}>
+                        <h2 className="text-[32px] md:text-[45px] text-slate-900 font-black tracking-tighter leading-none md:text-right">
                             MESSAGE FROM <span className="text-blue-600 relative inline-block group/title">
                                 THE MD
                                 <motion.span
@@ -153,11 +143,11 @@ export default function LeadershipSection() {
                     <div className="grid md:grid-cols-[1.2fr_0.8fr] gap-16 items-start">
                         {/* Text Side */}
                         <div className="order-2 md:order-1 flex flex-col gap-8 pt-6">
-                            <p className={`${cabin.className} text-[18px] text-slate-600 leading-relaxed text-justify font-medium`}>
+                            <p className="text-[18px] text-slate-600 leading-relaxed text-justify font-medium">
                                 The strength of an educational institution lies in its ability to adapt and provide <strong className="text-slate-900 font-black">sustainable career paths</strong>. At Seamedu, we focus on a curriculum that is deeply rooted in contemporary industry needs.
                             </p>
 
-                            <p className={`${cabin.className} text-[18px] text-slate-600 leading-relaxed text-justify font-medium`}>
+                            <p className="text-[18px] text-slate-600 leading-relaxed text-justify font-medium">
                                 We prioritize <strong className="text-blue-600 font-extrabold">holistic development</strong>, ensuring our students possess both technical prowess and the management acumen to excel globally. Our commitment is to bridge the gap between passion and profession effectively.
                             </p>
 
@@ -168,7 +158,7 @@ export default function LeadershipSection() {
                                     transition={{ duration: 1 }}
                                     className="absolute right-0 top-0 w-2 bg-blue-600 rounded-full shadow-[0_0_15px_rgba(37,99,235,0.4)]"
                                 />
-                                <blockquote className={`${cabin.className} text-[19px] text-slate-800 leading-relaxed text-justify italic pr-10 pl-8 relative bg-blue-50/30 backdrop-blur-sm rounded-l-[32px] py-8 md:text-right border border-blue-100/50`}>
+                                <blockquote className="text-[19px] text-slate-800 leading-relaxed text-justify italic pr-10 pl-8 relative bg-blue-50/30 backdrop-blur-sm rounded-l-[32px] py-8 md:text-right border border-blue-100/50">
                                     <span className="absolute right-4 top-2 text-7xl text-blue-200/50 font-serif leading-none select-none opacity-50 transform rotate-180">"</span>
                                     <em>
                                         Our mission is to foster a culture of <strong className="text-blue-600 font-extrabold">continuous learning</strong>, empowering our students to lead with confidence and creativity in the global market.
@@ -203,11 +193,11 @@ export default function LeadershipSection() {
 
                             <div className="mt-8 text-left md:text-right w-full max-w-[340px]">
                                 <motion.h4
-                                    className={`${nunito.className} font-black text-3xl text-slate-900 tracking-tight leading-none mb-2`}
+                                    className="font-black text-3xl text-slate-900 tracking-tight leading-none mb-2"
                                 >
                                     Mrs. Anuja Patil
                                 </motion.h4>
-                                <p className={`${cabin.className} text-[15px] font-bold text-blue-600 uppercase tracking-[3px]`}>
+                                <p className="text-[15px] font-bold text-blue-600 uppercase tracking-[3px]">
                                     Managing Director, Seamedu
                                 </p>
                             </div>
@@ -234,7 +224,7 @@ export default function LeadershipSection() {
                             ></motion.span>
                             <span className="text-[12px] font-black text-blue-600 uppercase tracking-[5px] drop-shadow-sm">Operational Excellence</span>
                         </div>
-                        <h2 className={`${nunito.className} text-[32px] md:text-[45px] text-slate-900 font-black tracking-tighter leading-none`}>
+                        <h2 className="text-[32px] md:text-[45px] text-slate-900 font-black tracking-tighter leading-none">
                             MESSAGE FROM <span className="text-blue-600 relative inline-block group/title">
                                 THE COO
                                 <motion.span
@@ -273,22 +263,22 @@ export default function LeadershipSection() {
 
                             <div className="mt-8 text-left w-full max-w-[340px]">
                                 <motion.h4
-                                    className={`${nunito.className} font-black text-3xl text-slate-900 tracking-tight leading-none mb-2 uppercase`}
+                                    className="font-black text-3xl text-slate-900 tracking-tight leading-none mb-2 uppercase"
                                 >
                                     Mr. Ajay Thomas
                                 </motion.h4>
-                                <p className={`${cabin.className} text-[15px] font-bold text-blue-600 uppercase tracking-[3px]`}>
+                                <p className="text-[15px] font-bold text-blue-600 uppercase tracking-[3px]">
                                     COO, Seamedu
                                 </p>
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-8 pt-6">
-                            <p className={`${cabin.className} text-[18px] text-slate-600 leading-relaxed text-justify font-medium`}>
+                            <p className="text-[18px] text-slate-600 leading-relaxed text-justify font-medium">
                                 <strong className="text-slate-900 font-black">Mr. Ajay Thomas</strong> leads the operational strategy at Seamedu, driving innovation across all campuses. His focus is on creating a <strong className="text-blue-600 font-extrabold">seamless learning experience</strong> with modern infrastructure and robust placement support.
                             </p>
 
-                            <p className={`${cabin.className} text-[18px] text-slate-600 leading-relaxed text-justify font-medium`}>
+                            <p className="text-[18px] text-slate-600 leading-relaxed text-justify font-medium">
                                 By streamlining strategic planning and industry partnerships, we ensure Seamedu remains at the forefront of vocational education. Our goal is to make professional training impactful and results-driven for every student.
                             </p>
 
@@ -299,7 +289,7 @@ export default function LeadershipSection() {
                                     transition={{ duration: 1 }}
                                     className="absolute left-0 top-0 w-2 bg-blue-600 rounded-full shadow-[0_0_15px_rgba(37,99,235,0.4)]"
                                 />
-                                <blockquote className={`${cabin.className} text-[19px] text-slate-800 leading-relaxed text-justify italic pl-10 pr-8 relative bg-blue-50/30 backdrop-blur-sm rounded-r-[32px] py-8 border border-blue-100/50`}>
+                                <blockquote className="text-[19px] text-slate-800 leading-relaxed text-justify italic pl-10 pr-8 relative bg-blue-50/30 backdrop-blur-sm rounded-r-[32px] py-8 border border-blue-100/50">
                                     <span className="absolute left-4 top-2 text-7xl text-blue-200/50 font-serif leading-none select-none opacity-50">"</span>
                                     <em>
                                         We strive for <strong className="text-blue-600 font-extrabold">operational excellence</strong> that translates into real-world success, providing a platform where passion meets profession effectively.

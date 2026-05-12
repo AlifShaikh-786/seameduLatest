@@ -77,7 +77,7 @@ const CampusLife = () => {
   const scrollingImages = [...allImages, ...allImages]; // Double for seamless loop
 
   return (
-    <section className="w-full flex flex-col px-6 py-10 md:py-20 bg-blue-50/50 font-inter overflow-hidden">
+    <section className="w-full flex flex-col px-6 py-10 md:py-20 bg-blue-50/50 font-poppins overflow-hidden">
       <div className="max-w-[1400px] mx-auto w-full">
         
         {/* Header Section */}

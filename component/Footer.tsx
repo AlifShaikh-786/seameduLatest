@@ -65,7 +65,7 @@ export default function Footer() {
 
 
     return (
-        <footer className="relative bg-white text-slate-700 pt-4 pb-4 font-inter w-full border-t border-slate-100 overflow-hidden">
+        <footer className="relative bg-white text-slate-700 pt-4 pb-4 font-poppins w-full border-t border-slate-100 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-6 relative z-10">
 
                 {/* Main Content Grid */}

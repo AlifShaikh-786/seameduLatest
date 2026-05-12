@@ -2,17 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Nunito, Cabin } from "next/font/google";
 import { Star, Shield, Zap, Target, Users, BarChart3, GraduationCap, Handshake, Globe } from "lucide-react";
-
-const nunito = Nunito({
-    subsets: ["latin"],
-    weight: ["400", "500", "600", "700", "800", "900"],
-});
-const cabin = Cabin({
-    subsets: ["latin"],
-    weight: ["400", "500", "600", "700"],
-});
 
 export default function PhilosophyValues() {
     const values = [
@@ -68,14 +58,14 @@ export default function PhilosophyValues() {
                     >
                         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100/50 text-blue-700 mb-6 border border-blue-200/50">
                             <Handshake className="w-4 h-4" />
-                            <span className={`${cabin.className} text-xs font-bold uppercase tracking-wider`}>
+                            <span className="text-xs font-bold uppercase tracking-wider">
                                 Our Core Values
                             </span>
                         </div>
-                        <h2 className={`${nunito.className} text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight`}>
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
                             Empowering Education <br className="hidden md:block" /> Through <span className="text-blue-600">Shared Values</span>
                         </h2>
-                        <p className={`${cabin.className} text-lg md:text-xl text-slate-600`}>
+                        <p className="text-lg md:text-xl text-slate-600">
                             As an educational partner, our philosophy is rooted in collaboration, integrity, and a relentless pursuit of academic excellence.
                         </p>
                     </motion.div>
@@ -106,16 +96,16 @@ function ValueCard({ val, idx }: { val: any, idx: number }) {
                 <div className="w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
                     {val.icon}
                 </div>
-                <span className={`${nunito.className} text-4xl font-extrabold text-slate-100 group-hover:text-blue-50 transition-colors duration-300`}>
+                <span className="text-4xl font-extrabold text-slate-100 group-hover:text-blue-50 transition-colors duration-300">
                     {val.num}
                 </span>
             </div>
             
-            <h3 className={`${nunito.className} text-xl font-bold text-slate-900 mb-3`}>
+            <h3 className="text-xl font-bold text-slate-900 mb-3">
                 {val.title}
             </h3>
             
-            <p className={`${cabin.className} text-slate-600 leading-relaxed`}>
+            <p className="text-slate-600 leading-relaxed">
                 {val.desc}
             </p>
         </motion.div>

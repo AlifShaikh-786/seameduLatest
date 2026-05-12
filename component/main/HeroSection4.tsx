@@ -77,7 +77,7 @@ export default function HeroSection4() {
     const baseFlex = 1;
 
     return (
-        <section className="relative w-full h-screen overflow-hidden bg-white font-inter text-slate-900">
+        <section className="relative w-full h-screen overflow-hidden bg-white font-poppins text-slate-900">
 
             {/* DESKTOP/TABLET ACCORDION VIEW (lg and up) */}
             <div className="hidden lg:flex w-full h-full">

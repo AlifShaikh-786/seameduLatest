@@ -17,7 +17,7 @@ export default function CourseSection() {
     }, []);
 
     return (
-        <section className="my-10 md:my-20  font-inter relative overflow-hidden">
+        <section className="my-10 md:my-20  font-poppins relative overflow-hidden">
             <div className="container mx-auto px-6 max-w-7xl relative z-10">
                 <div className="flex flex-col items-center mb-12 sm:mb-16 text-center">
                     <h2 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-3">

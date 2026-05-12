@@ -28,7 +28,7 @@ export default function HeroSections() {
                     </h1>
 
                     <div className="mb-12 max-w-[620px]">
-                        <p className="text-base sm:text-lg font-medium font-inter text-slate-500 leading-relaxed pl-6 border-l-4 border-blue-600">
+                        <p className="text-base sm:text-lg font-medium font-poppins text-slate-500 leading-relaxed pl-6 border-l-4 border-blue-600">
                             Empowering future business leaders with innovation, strategy, and global perspective.
                             Industry-ready programs designed to build tomorrow&apos;s strategic visionaries.
                         </p>

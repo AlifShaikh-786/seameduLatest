@@ -4,16 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BookOpen, Globe2, Target, GraduationCap, ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { Nunito, Cabin } from "next/font/google";
 
-const nunito = Nunito({
-    subsets: ["latin"],
-    weight: ["400", "500", "600", "700", "800", "900"],
-});
-const cabin = Cabin({
-    subsets: ["latin"],
-    weight: ["400", "500", "600", "700"],
-});
 
 export default function ModernHero() {
     return (
@@ -35,7 +26,7 @@ export default function ModernHero() {
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 w-fit mb-8"
                         >
                             <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
-                            <span className={`${nunito.className} text-sm font-bold text-blue-700 uppercase tracking-widest`}>
+                            <span className="text-sm font-bold text-blue-700 uppercase tracking-widest">
                                 Educational Partner
                             </span>
                         </motion.div>
@@ -45,7 +36,7 @@ export default function ModernHero() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.1 }}
-                            className={`${nunito.className} text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] mb-6 tracking-tight`}
+                            className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] mb-6 tracking-tight"
                         >
                             Shaping the <span className="text-blue-600">Future</span> of Creative Education
                         </motion.h1>
@@ -55,7 +46,7 @@ export default function ModernHero() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.2 }}
-                            className={`${cabin.className} text-lg text-slate-600 mb-12 max-w-xl leading-relaxed`}
+                            className="text-lg text-slate-600 mb-12 max-w-xl leading-relaxed"
                         >
                             Our mission is to establish a globally recognized academic ecosystem that cultivates pioneers in creative tech, integrating ethics and industry standards into curriculum delivery.
                         </motion.p>
@@ -90,10 +81,10 @@ export default function ModernHero() {
                                         {item.icon}
                                     </div>
                                     <div>
-                                        <h3 className={`${nunito.className} text-xl font-bold text-slate-900 mb-2`}>
+                                        <h3 className="text-xl font-bold text-slate-900 mb-2">
                                             {item.title}
                                         </h3>
-                                        <p className={`${cabin.className} text-slate-600 leading-snug`}>
+                                        <p className="text-slate-600 leading-snug">
                                             {item.desc}
                                         </p>
                                     </div>
@@ -135,10 +126,10 @@ export default function ModernHero() {
                                         <GraduationCap className="w-6 h-6" />
                                     </div>
                                     <div>
-                                        <h4 className={`${nunito.className} text-lg font-bold text-slate-900 leading-tight`}>
+                                        <h4 className="text-lg font-bold text-slate-900 leading-tight">
                                             2000+ Placements
                                         </h4>
-                                        <p className={`${cabin.className} text-sm text-slate-500 font-medium mt-1`}>
+                                        <p className="text-sm text-slate-500 font-medium mt-1">
                                             Preferred Educational Network
                                         </p>
                                     </div>

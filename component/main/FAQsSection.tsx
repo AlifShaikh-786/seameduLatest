@@ -177,7 +177,7 @@ export default function FAQsSection() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.3 }}
-                            className="p-5 rounded-[2.5rem] bg-blue-50/50 border border-blue-100 relative overflow-hidden flex flex-col sm:flex-row items-center justify-between gap-6 group hover:shadow-xl hover:shadow-blue-600/5 transition-all cursor-pointer"
+                            className="p-5 rounded-[2.5rem] bg-blue-50/50 border border-blue-100 relative overflow-hidden flex flex-col sm:flex-row items-center justify-between gap-6 group  transition-all cursor-pointer"
                         >
                             <div className="absolute top-0 right-0 w-48 h-40 bg-blue-100/30 rounded-full -mr-24  blur-3xl group-hover:scale-150 transition-transform duration-700" />
 

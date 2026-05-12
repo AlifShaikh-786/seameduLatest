@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { NavBar } from "@/component/navBar";
 import Footer from "@/component/Footer";
@@ -8,19 +8,10 @@ import ChatWidget from "@/component/main/ChatWidget";
 import Footer1 from "@/component/Footer1";
 import NavNew from "@/component/main/NavNew";
 
-const inter = Inter({
-  variable: "--font-inter",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
-});
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -35,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+        className={`${poppins.variable} antialiased flex flex-col min-h-screen`}
       >
         {/* Navbar */}
         {/* <div className="top-0 left-1/2 z-[100] absolute -translate-x-1/2 w-full max-w-[1400px] px-10 py-5 fixed"> */}

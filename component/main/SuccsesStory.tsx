@@ -119,7 +119,7 @@
 //   if (!isMounted) return null;
 
 //   return (
-//     <section className="bg-white py-12 font-inter relative overflow-hidden">
+//     <section className="bg-white py-12 font-poppins relative overflow-hidden">
 //       <div className="max-w-[1500px] mx-auto px-6 sm:px-12 lg:px-32 text-center relative z-10">
         
 //         {/* Title */}
@@ -370,7 +370,7 @@ const SuccessStories = () => {
   const duplicatedStories = [...stories, ...stories, ...stories];
 
   return (
-    <section className="bg-white py-12 md:px-24 lg:px-32 font-inter relative overflow-hidden">
+    <section className="bg-white py-12 md:px-24 lg:px-32 font-poppins relative overflow-hidden">
       <div className="max-w-[1400px] mx-auto text-center relative z-10">
         
         {/* Title */}
