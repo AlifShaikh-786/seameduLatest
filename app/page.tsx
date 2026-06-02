@@ -30,9 +30,9 @@ import WhyChooseUs from "@/component/main/WhyChoose";
 import WhyChoose from "@/component/main/WhyChooseUs";
 import SuccessStories from "@/component/main/SuccsesStory";
 import PlacementHighlights from "@/component/main/PlacementHighlights";
+import PlacementHiringCopy from "@/component/main/PlacementHiring copy";
 
 // import SuccessStories from "@/component/main/SucessStories";
-
 
 export default function Home() {
   return (
@@ -40,7 +40,7 @@ export default function Home() {
       {/* <HeroSection /> */}
       {/* <NewHeroSection /> */}
       <HeroSection2 />
-
+      <PlacementHiringCopy />
       {/* <HeroSection3 /> */}
       {/* <HeroSection4 /> */}
       {/* <HeroQuickLinks /> */}
@@ -49,8 +49,6 @@ export default function Home() {
       <WhyChoose />
       {/* <AboutUs /> */}
       {/* <AboutUs2 /> */}
-
-
 
       {/* <CertificationsSection /> */}
 
@@ -63,7 +61,7 @@ export default function Home() {
       <LifeAtSeamedu />
       {/* <OurCampuses /> */}
 
-      <StudentWork4 />
+      {/* <StudentWork4 /> */}
       {/* <StudentWork4/> */}
 
       {/* <TopPlacement /> */}
@@ -73,7 +71,6 @@ export default function Home() {
       <NewsUpdate />
       {/* <NewTestimonials /> */}
       {/* <TestimonialSlider /> */}
-
 
       {/* <ConnectWithUs /> */}
 
@@ -91,6 +88,5 @@ export default function Home() {
 
       <FAQsSection />
     </main>
-
   );
 }

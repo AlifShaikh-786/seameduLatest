@@ -10,25 +10,32 @@ import HiringPartners from "@/component/university/HiringPartner";
 import OurCampuses from "@/component/university/OurCampuse";
 import UniversityHighlight from "@/component/university/UniversityHighlights";
 import WhyUs from "@/component/university/WhyUs";
-
-
-
+import PlacementHiring from "@/component/main/PlacementHiring";
+import PlacementHighlights from "@/component/main/PlacementHighlights";
+import WhySeamedu from "@/component/university/WhySeamedu";
+import InformationRequestForm from "@/component/university/InformationRequestForm";
+// import WhySeamedu from "@/component/course-page/WhySeamedu";
 
 export default function UniversityPage() {
-    return (
-        <main className="min-h-screen bg-white">
-            <HeroSection />
+  return (
+    <main className="min-h-screen bg-white">
+      <HeroSection />
+      <WhySeamedu />
+      {/* <UniversityHighlight />
+      <WhyUs /> */}
 
-            <UniversityHighlight />
-            <WhyUs />
-            <CertificationsOffered />
+      <CoursesGrid />
+      <CertificationsOffered />
+      <TopPlacement />
+      <InformationRequestForm />
+      {/* <PlacementHiring /> */}
 
-            <CoursesGrid />
-            <TopPlacement />
-            <PlacementPartner titlePart1="Hiring" count="100" />
-            <OurCampuses />
-            <FAQsSection />
-            <HowToReachUs />
-        </main>
-    )
+      {/* <PlacementHighlights /> */}
+      {/* <PlacementPartner titlePart1="Hiring" count="100" /> */}
+      <OurCampuses />
+
+      <HowToReachUs />
+      <FAQsSection />
+    </main>
+  );
 }

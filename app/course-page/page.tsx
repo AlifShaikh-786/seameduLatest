@@ -29,10 +29,9 @@ export default function CoursePage() {
 
       <ProgramAvailability />
       <WhyChooseSection />
-      <WhyChooseUsNew />
+      {/* <WhyChooseUsNew /> */}
 
-
-      <WhyChooseSection />
+      {/* <WhyChooseSection /> */}
 
       <TopPlacement />
       <PlacementPartner />

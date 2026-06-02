@@ -1,60 +1,191 @@
+// "use client";
+
+// import Image from "next/image";
+
+// // Map certifications to their exact SVG logos for a professional look
+// const certifications = [
+//   {
+//     name: "AWS Academy",
+//     logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+//   },
+//   {
+//     name: "Microsoft Learn",
+//     logo: "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+//   },
+//   {
+//     name: "Google Cloud",
+//     logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+//   },
+//   {
+//     name: "Cisco Academy",
+//     logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg",
+//   },
+//   {
+//     name: "Adobe Certified",
+//     logo: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Adobe_Systems_logo_and_wordmark.svg",
+//   },
+//   {
+//     name: "Figma Campus",
+//     logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+//   },
+// ];
+
+// export default function CertificationsOffered() {
+//   // Double the list to ensure a seamless infinite marquee loop
+//   const scrollingCertifications = [...certifications, ...certifications];
+
+//   return (
+//     <>
+//       <section className="py-16 bg-white border-b border-slate-100 overflow-hidden select-none">
+//         {/* Section Header */}
+//         <div className="text-center mb-10">
+//           <span className="text-[11px] font-bold tracking-[0.2em] text-[#c5a880] uppercase block mb-2">
+//             Global Recognition
+//           </span>
+//           <h2 className="text-2xl md:text-3xl font-serif font-normal text-black">
+//             Certifications{" "}
+//             <span className="font-serif font-normal  text-black">Offered</span>
+//           </h2>
+//         </div>
+
+//         {/* Marquee Wrapper with Smooth Fading Edges */}
+//         <div className="relative w-full overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-24 before:bg-gradient-to-r before:from-white before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-24 after:bg-gradient-to-l after:from-white after:to-transparent">
+//           <div className="flex w-max gap-16 md:gap-24 animate-marquee opacity-60 hover:opacity-100 hover:[animation-play-state:paused] transition-opacity duration-300 py-4 items-center">
+//             {/* Main + Duplicated Loop tracks automatically via mapping */}
+//             {scrollingCertifications.map((cert, index) => (
+//               <div
+//                 key={index}
+//                 className="flex items-center gap-3 text-lg md:text-xl font-bold tracking-wider text-slate-700 whitespace-nowrap"
+//                 aria-hidden={
+//                   index >= certifications.length ? "true" : undefined
+//                 }
+//               >
+//                 <div className="relative h-8 w-16 flex items-center justify-center">
+//                   <Image
+//                     src={cert.logo}
+//                     alt={`${cert.name} logo`}
+//                     fill
+//                     className="object-contain"
+//                     sizes="64px"
+//                   />
+//                 </div>
+//                 {/* <span>{cert.name}</span> */}
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Embedded CSS for smooth continuous carousel animation */}
+//       <style jsx>{`
+//         @keyframes marquee {
+//           0% {
+//             transform: translateX(0);
+//           }
+//           100% {
+//             transform: translateX(-50%);
+//           }
+//         }
+//         .animate-marquee {
+//           animation: marquee 25s linear infinite;
+//         }
+//       `}</style>
+//     </>
+//   );
+// }
+
 "use client";
 
 import Image from "next/image";
 
-const logos = [
-    "https://upload.wikimedia.org/wikipedia/commons/8/8d/Adobe_Systems_logo_and_wordmark.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
-    "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+// Map certifications to their exact SVG logos for a professional look
+const certifications = [
+  {
+    name: "AWS Academy",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+  },
+  {
+    name: "Microsoft Learn",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg",
+  },
+  {
+    name: "Google Cloud",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+  },
+  {
+    name: "Cisco Academy",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg",
+  },
+  {
+    name: "Adobe Certified",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Adobe_Systems_logo_and_wordmark.svg",
+  },
+  {
+    name: "Figma Campus",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+  },
 ];
 
 export default function CertificationsOffered() {
-    // Triplicate the logos list to ensure smooth infinite loop
-    const scrollingLogos = [...logos, ...logos, ...logos];
+  // Double the list to ensure a seamless infinite marquee loop
+  const scrollingCertifications = [...certifications, ...certifications];
 
-    return (
-        <section className="py-16 bg-gray-100 overflow-hidden">
+  return (
+    <>
+      <section className="py-24 bg-white border-b border-slate-100 overflow-hidden select-none">
+        {/* Section Header */}
+        <div className="text-center mb-10">
+          <span className="text-[11px] font-bold tracking-[0.2em] text-[#c5a880] uppercase block mb-2">
+            Global Recognition
+          </span>
+          <h2 className="text-2xl md:text-3xl font-serif font-normal text-black">
+            Certifications{" "}
+            <span className="font-serif font-normal  text-black">Offered</span>
+          </h2>
+        </div>
 
-            {/* Synced Heading */}
-            <div className="flex flex-col items-center mb-12 sm:mb-16 text-center">
-                <h2 className="text-[10px] md:text-sm font-black uppercase tracking-[0.3em] text-blue-600 mb-2 animate-fade-in">Global Recognition</h2>
-                <h3 className="text-2xl md:text-4xl lg:text-[50px] font-[1000] text-slate-900 tracking-tighter italic leading-none">
-                    Certifications <span className="text-blue-600 not-italic">Offered</span>
-                </h3>
-            </div>
-
-            {/* Slider */}
-            <div className="overflow-hidden w-full relative">
-                {/* Fading Edges */}
-                <div className="absolute top-0 left-0 w-24 h-full bg-gradient-to-r from-gray-100 to-transparent z-10 pointer-events-none" />
-                <div className="absolute top-0 right-0 w-24 h-full bg-gradient-to-l from-gray-100 to-transparent z-10 pointer-events-none" />
-
-                <div className="flex items-center gap-14 w-max animate-scroll-logos hover:[animation-play-state:paused]">
-                    {scrollingLogos.map((logo, index) => (
-                        <div key={index} className="flex items-center justify-center shrink-0">
-                            <img
-                                src={logo}
-                                alt="partner logo"
-                                className="h-12 w-auto object-contain opacity-70 hover:opacity-100 transition duration-300 filter "
-                            />
-                        </div>
-                    ))}
+        {/* Marquee Wrapper with Smooth Fading Edges */}
+        <div className="relative w-full overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-24 before:bg-gradient-to-r before:from-white before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-24 after:bg-gradient-to-l after:from-white after:to-transparent">
+          <div className="flex w-max gap-16 md:gap-24 animate-marquee opacity-60 hover:opacity-100 hover:[animation-play-state:paused] transition-opacity duration-300 py-4 items-center">
+            {/* Main + Duplicated Loop tracks automatically via mapping */}
+            {scrollingCertifications.map((cert, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-3 text-lg md:text-xl font-bold tracking-wider text-slate-700 whitespace-nowrap"
+                aria-hidden={
+                  index >= certifications.length ? "true" : undefined
+                }
+              >
+                <div className="relative h-8 w-16 flex items-center justify-center">
+                  <Image
+                    src={cert.logo}
+                    alt={`${cert.name} logo`}
+                    fill
+                    className="object-contain"
+                    sizes="64px"
+                  />
                 </div>
-            </div>
+                {/* <span>{cert.name}</span> */}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <style>{`
-                @keyframes scroll-logos {
-                    0% { transform: translateX(0); }
-                    100% { transform: translateX(-33.333%); }
-                }
-                .animate-scroll-logos {
-                    animation: scroll-logos 15s linear infinite;
-                }
-            `}</style>
-
-        </section>
-    );
+      {/* Embedded CSS for smooth continuous carousel animation */}
+      <style jsx>{`
+        @keyframes marquee {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-marquee {
+          animation: marquee 25s linear infinite;
+        }
+      `}</style>
+    </>
+  );
 }

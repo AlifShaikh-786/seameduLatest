@@ -11,9 +11,9 @@
   --font-poppins: var(--font-poppins);
   --font-sans: var(--font-poppins);
   --font-mono: var(--font-poppins);
-  --color-blue-600: #0044cc;
-  --color-blue-700: #003399;
-  --color-blue-500: #0055ff;
+  --color-blue-600: #155DFC;
+  /* --color-blue-700: #003399; */
+  /* --color-blue-500: #0055ff; */
   --breakpoint-nav: 1075px;
   --breakpoint-xxl: 1400px;
   --breakpoint-ultra: 1700px;
@@ -62,8 +62,12 @@ body {
 }
 
 @keyframes scroll-partners {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-scroll-partners {
@@ -86,13 +90,21 @@ body {
 }
 
 @keyframes scroll-left {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes scroll-right {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .marquee-scroll-left {

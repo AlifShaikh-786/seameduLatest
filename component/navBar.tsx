@@ -5,7 +5,7 @@ import { createPortal } from "react-dom";
 import Link from "next/link";
 import { Menu, X, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
+    // 1
 const menuData = {
   aboutUs: [
     { label: "philosophy", href: "#" },
