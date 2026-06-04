@@ -7,7 +7,7 @@ import { Play, ChevronLeft, ChevronRight, Calendar } from "lucide-react";
 interface NewsEvent {
   id: number;
   title: string;
-  university: string;
+  program: string;
   thumbnail: string;
   date: string;
   videoUrl: string;
@@ -16,8 +16,8 @@ interface NewsEvent {
 const newsData: NewsEvent[] = [
   {
     id: 1,
-    title: "ATMOS Studio Inauguration",
-    university: "Ajeenkya DY Patil University",
+    title: "Hozaifa Sayed",
+    program: "Alumni - B.Sc Sound Engineering",
     thumbnail:
       "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80&w=1200",
     date: "21/11/2024",
@@ -25,8 +25,8 @@ const newsData: NewsEvent[] = [
   },
   {
     id: 2,
-    title: "Happy Foundation Day",
-    university: "Techno India University",
+    title: "Anjali Khare",
+    program: "Alumni - B.Sc Photography",
     thumbnail:
       "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&q=80&w=1200",
     date: "15/08/2024",
@@ -34,8 +34,8 @@ const newsData: NewsEvent[] = [
   },
   {
     id: 3,
-    title: "Guest Lecture Series",
-    university: "The NorthCap University",
+    title: "Raghu Veera Reddy",
+    program: "Alumni - BCA Game Development",
     thumbnail:
       "https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&q=80&w=1200",
     date: "05/10/2024",
@@ -43,8 +43,8 @@ const newsData: NewsEvent[] = [
   },
   {
     id: 4,
-    title: "Gaming Tournament 24",
-    university: "D Y Patil Ambi",
+    title: "Hozaifa Sayed",
+    program: "Alumni - B.Sc Sound Engineering",
     thumbnail:
       "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1200",
     date: "10/12/2024",
@@ -52,8 +52,8 @@ const newsData: NewsEvent[] = [
   },
   {
     id: 5,
-    title: "VFX Masterclass",
-    university: "The NorthCap University",
+    title: "Animesh Majumdar",
+    program: "Alumni - B.Sc. Vfx &amp; Animation",
     thumbnail:
       "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80&w=1200",
     date: "12/12/2024",
@@ -61,8 +61,8 @@ const newsData: NewsEvent[] = [
   },
   {
     id: 6,
-    title: "Sound Engineering Workshop",
-    university: "Ajeenkya DY Patil University",
+    title: "Hozaifa Sayed",
+    program: "Alumni - B.Sc Sound Engineering",
     thumbnail:
       "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&q=80&w=1200",
     date: "18/12/2024",
@@ -70,8 +70,8 @@ const newsData: NewsEvent[] = [
   },
   {
     id: 7,
-    title: "Annual Convocation 2024",
-    university: "Techno India University",
+    title: "Anjali Khare",
+    program: "Alumni - B.Sc Photography",
     thumbnail:
       "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1200",
     date: "20/12/2024",
@@ -110,9 +110,9 @@ export default function NewsAndUpdatesSlider() {
 
     const interval = setInterval(() => {
       handleScroll("right");
-    }, 4000); // Same 4s interval as SuccessStories
+    }, 3000); // Same 4s interval as SuccessStories
 
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); 
   }, [isMounted, isPaused]);
 
   const handleScroll = (direction: "left" | "right") => {
@@ -232,19 +232,19 @@ export default function NewsAndUpdatesSlider() {
                       </div>
                     </div>
                   </div>
-                  <div className="h-[38%] px-5 py-4 flex flex-col justify-center bg-white border-t border-slate-50 gap-1.5">
-                    <div className="flex items-center gap-2">
+                  <div className="h-[30%] px-5 py-4 flex flex-col justify-center bg-white border-t border-slate-50 gap-1.5">
+                    {/* <div className="flex items-center gap-2">
                       <Calendar size={12} className="text-slate-400" />
                       <span className="text-slate-400 text-[10px] md:text-[11px] font-medium uppercase tracking-wider">
                         {event.date}
                       </span>
-                    </div>
+                    </div> */}
                     <h3 className="text-slate-900 font-semibold text-sm leading-snug line-clamp-2 group-hover:text-blue-700 transition-colors">
                       {event.title}
                     </h3>
                     <div className="inline-flex mt-0.5">
                       <span className="bg-blue-50 text-blue-700 text-[10px] md:text-xs font-medium px-3 py-1 rounded-md tracking-wide">
-                        {event.university}
+                        {event.program}
                       </span>
                     </div>
                   </div>

@@ -31,6 +31,11 @@ import WhyChoose from "@/component/main/WhyChooseUs";
 import SuccessStories from "@/component/main/SuccsesStory";
 import PlacementHighlights from "@/component/main/PlacementHighlights";
 import PlacementHiringCopy from "@/component/main/PlacementHiring copy";
+import PlacementHighlightsTopHeader from "@/component/main/PlacementHighlights copy";
+import PlacementHighlightsMinimalist from "@/component/main/PlacementHighlights copy 2";
+import PremiumPlacementGrid from "@/component/main/PlacementHighlights copy 2";
+import PremiumMinimalistFourCards from "@/component/main/PlacementHighlights copy 2";
+import PlacementGrid from "@/component/main/PlacementHighlights copy 2";
 
 // import SuccessStories from "@/component/main/SucessStories";
 
@@ -58,6 +63,8 @@ export default function Home() {
       <PlacementHiring />
 
       <PlacementHighlights />
+      <PlacementHighlightsTopHeader />
+      {/* <PlacementGrid /> */}
       <LifeAtSeamedu />
       {/* <OurCampuses /> */}
 
